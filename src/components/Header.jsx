@@ -1,10 +1,9 @@
-import "./../index.css"
 import Container from '@mui/material/Container';
+import "../css/header.css"
 
 function Header() {
     return (
         <div className="header">
-            <img className="header__bg" src="https://www.rootit.in/_next/static/media/Main%20gif.feee1d78.gif" alt="" />
             <Container maxWidth="lg" className="header__container">
                 <div className="header__content">
                     <h1 className="text-xl">

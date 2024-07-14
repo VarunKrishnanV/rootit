@@ -1,6 +1,8 @@
 function Services() {
   return (
-    <div>Services</div>
+    <div className="bg-gray">
+      <div>Home</div>
+    </div>
   )
 }
 

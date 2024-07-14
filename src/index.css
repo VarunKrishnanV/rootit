@@ -6,12 +6,23 @@
     box-sizing: border-box;
     font-family: "Figtree", sans-serif;
     line-height: 150%;
+    /* border: 1px solid rgba(255, 0, 0, 0.416); */
+}
+
+.bg-gray {
+    background-color: #151517;
+    height: 100vh;
+    width: 100vw;
 }
 
 html {
     font-size: 62.5%;
 }
 /* ------font size--------- */
+
+.navbar {
+    background-color: #151517;
+}
 
 .text-3xl {
     font-size: 8rem;
@@ -47,68 +58,6 @@ html {
     font-size: 12px;
 }
 
-/* ------------------- */
-
-.text-gradient {
-    color: transparent;
-    background-image: linear-gradient(83.46deg, #7f47bf, #d690f2);
-    background-clip: text;
-}
-
-.bg-red {
-    background-color: red;
-}
-
-/* ------- header start ------------ */
-
-.header {
-    height: 60vh;
-    background-color: #000000;
-    padding: 20px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.header__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header__bg {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-
-.header__content {
-    color: white;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-}
-.header__description {
-}
-.header__loader {
-    position: absolute;
-    bottom: 0px;
-    right: 50px;
-
-    z-index: 1;
-    width: 150px;
-    height: 150px;
-}
-
-.header__loader img {
-    width: 100%;
-}
-
 @media screen and (max-width: 768px) {
     .header__loader {
         position: relative;
@@ -119,9 +68,35 @@ html {
     }
 }
 
-/* ------------ header end ----------------- */
+/* ------------------- */
 
-/* ------------ about start ----------------- */
+.text-gradient {
+    color: transparent;
+    background-image: linear-gradient(83.46deg, #7f47bf, #d690f2);
+    background-clip: text;
+}
+
+/* ------- header start ------------ */
+
+.btn-primary {
+    padding: 20px 40px;
+    background-image: linear-gradient(83.46deg, #7f47bf, #d690f2);
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50px;
+}
+
+.btn-nav {
+    padding: 10px 20px;
+    background-image: linear-gradient(83.46deg, #7f47bf, #d690f2);
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50px;
+}
 
 .about {
     padding: 80px 0;
@@ -146,15 +121,7 @@ html {
     margin-top: 20px;
 }
 
-.about__banner {
-    height: 60vh;
-}
 
-.about__banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .about__principlesContainer {
     padding: 80px 0;
@@ -179,6 +146,12 @@ html {
     margin-bottom: 20px;
 }
 
+.about__principles {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
 .principle__image {
     width: 100%;
     height: 100%;
@@ -188,45 +161,111 @@ html {
     border-radius: 500px;
 }
 .principle__title {
+    margin-bottom: 4px;
 }
 .principle__description {
 }
 
 /* ------------ get in touch card ----------------- */
 
-/* 
-.git {
-    height: 60vh;
-    background-color: #000000;
-    padding: 20px;
-    position: relative;
+.git__container {
+    padding: 40px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #151517;
+    background-image: url("https://www.rootit.in/_next/static/media/Main%20gif.feee1d78.gif");
+         background-position: center center;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    color: white;
+    border-radius: 20px;
+    margin: 80px 0;
+}
+
+.navbar header {
+    background: transparent;
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: none !important;
+}
+
+.navbar__toolbar {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: none;
+}
+
+.navbar__links {
+    display: flex;
+    list-style-type: none;
+    color: #fff;
+    gap: 36px;
+    background-color: #ffffff17;
+    padding: 20px 40px;
+    backdrop-filter: blur(0.5);
+    border-radius: 40px;
+}
+
+.navbar__links .link {
+    color: #fff;
+    list-style-type: none;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.hamburger__icon {
+    font-size: 20px !important;
+}
+
+/* sidebar menu */
+
+.sidebar {
+    background-color: #dad1f4;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    backdrop-filter: blur(0);
+    flex-direction: column;
+    padding: 30px;
+}
+
+.sidebar .navbar__links {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
+    list-style-type: none;
+    color: #3a1464;
+    background-color: transparent;
+    gap: 28px;
+    margin-top: 30px;
+}
 
-.git__container {
+.sidebar .link {
+    color: #fff;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 28px;
+    color: #3a1464;
+}
+
+.sidebar__header {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: url(https://www.rootit.in/_next/static/media/Main%20gif.feee1d78.gif);
+    justify-content: space-between;
 }
 
-/* .git__bg {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
+.sidebar .close__icon{
+  font-size: 30px;
+  cursor: pointer;
 }
-
-.git__content {
-    color: white;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-}
-.git__description {
-} */

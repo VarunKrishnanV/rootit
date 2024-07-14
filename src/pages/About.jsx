@@ -2,6 +2,8 @@ import Header from "../components/Header";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 import GetInTouch from "../components/GetInTouch";
+import Footer from "../components/Footer";
+import ImageBanner from "../components/ImageBanner";
 
 
 const principles = [
@@ -47,6 +49,7 @@ function About() {
     return (
         <div>
             <Header />
+
             <Container maxWidth="lg" className=" about">
                 <Grid container spacing={4} className="text-semi about__intro">
                     <Grid xs={12} md={7} className="about__intro">
@@ -83,19 +86,17 @@ function About() {
                 </p>
             </Container>
 
-            <div className="about__banner">
-                <img src="https://www.rootit.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FTeam.2569d17c.gif&w=1920&q=75" alt="" />
-            </div>
+            <ImageBanner url="https://www.rootit.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FTeam.2569d17c.gif&w=1920&q=75" />
 
             <Container maxWidth="lg" className=" about__principlesContainer">
                 <h2 className="text-lg about__principlesHeading">Our Core Principles</h2>
-                <Grid container spacing={5} className="about__principles">
+                <Grid container className="about__principles">
                     {
                         principles.map((principle, i) => {
                             const { title, description, icon } = principle
 
                             return (
-                                <Grid container spacing={2} className="principle" key={i}>
+                                <Grid container className="principle" key={i}>
                                     <Grid xs={12} md={2} lg={1}>
                                         <div className="principle__imageContainer">
                                             <img className="principle__image" src={icon} alt="" />
@@ -115,6 +116,7 @@ function About() {
             </Container>
 
             <GetInTouch />
+            <Footer />
         </div>
     );
 }
