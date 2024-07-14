@@ -1,11 +1,11 @@
 .popup__content {
-    padding: 60px !important;
+    padding: 60px;
 }
-.popup__title{
+.popup__title {
     margin-bottom: 20px;
 }
 
-.popup__watermark{
+.popup__watermark {
     position: absolute;
     right: 20%;
     bottom: 0;
@@ -17,19 +17,13 @@
     font-size: 40px !important;
 }
 
-.button__wrapper{
+.button__wrapper {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.btn-upload {
-    background-color: red;
-    font-size: 16px;
-}
 
-.uploadBtn input {
-}
 
 .close__icon {
     font-size: 30px !important;
@@ -44,4 +38,20 @@ input[type="file" i]::-webkit-file-upload-button {
     border: none;
     font-size: 20px;
     border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .popup__content {
+        padding: 20px;
+    }
+
+    .popup__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .popup__watermark {
+        width: 100px;
+        right: 50%;
+        z-index: 1;
+    }
 }

@@ -103,7 +103,7 @@ function About() {
                             const { title, description, icon } = principle
 
                             return (
-                                <Grid container className="principle" key={i}>
+                                <Grid container className="principle" spacing={2} key={i}>
                                     <Grid xs={12} md={2} lg={1}>
                                         <div className="principle__imageContainer">
                                             <img className="principle__image" src={icon} alt="" />

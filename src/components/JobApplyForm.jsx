@@ -43,7 +43,7 @@ const JobApplyForm = () => {
                                 container
                                 spacing={2}
                             >
-                                <Grid lg={12} sm={12} md={12} >
+                                <Grid lg={12} sm={12} md={6} xs={12} >
                                     <TextField
                                         margin="dense"
                                         label="Full Name"
@@ -58,7 +58,7 @@ const JobApplyForm = () => {
                                         }}
                                     />
                                 </Grid>
-                                <Grid lg={6} sm={12} md={6} >
+                                <Grid lg={6} sm={12} md={6} xs={12}>
                                     <TextField
                                         margin="dense"
                                         label="Phone Number"
@@ -73,7 +73,7 @@ const JobApplyForm = () => {
                                         }}
                                     />
                                 </Grid>
-                                <Grid lg={6} sm={12} md={6} >
+                                <Grid lg={6} sm={12} md={6} xs={12}  >
                                     <TextField
                                         margin="dense"
                                         label="E-mail"
@@ -90,7 +90,7 @@ const JobApplyForm = () => {
 
                                 </Grid>
 
-                                <Grid lg={6} sm={12} md={6} >
+                                <Grid lg={6} sm={12} md={6} xs={12}  >
                                     <TextField
                                         margin="dense"
                                         label="Current Salary"
@@ -105,7 +105,7 @@ const JobApplyForm = () => {
                                         }}
                                     />
                                 </Grid>
-                                <Grid lg={6} sm={12} md={6} >
+                                <Grid lg={6} sm={12} md={6} xs={12} >
                                     <TextField
                                         margin="dense"
                                         label="Work Experience"
