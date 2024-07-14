@@ -5,6 +5,8 @@ import GetInTouch from "../components/GetInTouch";
 import Footer from "../components/Footer";
 import ImageBanner from "../components/ImageBanner";
 
+import "../css/pages/about.css"
+
 
 const principles = [
     {
@@ -48,7 +50,12 @@ const principles = [
 function About() {
     return (
         <div>
-            <Header />
+            <Header
+                titlePart1="About"
+                titlePart2="Us"
+                description="Our story, our culture, your future"
+                type="1"
+            />
 
             <Container maxWidth="lg" className=" about">
                 <Grid container spacing={4} className="text-semi about__intro">

@@ -2,6 +2,8 @@ import "./../index.css"
 import Container from '@mui/material/Container';
 import Grid from "@mui/material/Unstable_Grid2";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+
+import "../css/components/getInTouch.css"
 // Grid version 2
 function GetInTouch() {
     return (
@@ -12,7 +14,7 @@ function GetInTouch() {
                     <p className="principle__description text-md">We&apos;d love to hear from you !</p>
                 </Grid>
                 <Grid >
-                    <button className="btn-primary text-semi">Get in touch <ArrowOutwardIcon /></button>
+                    <button className="btn btn-primary text-semi">Get in touch <ArrowOutwardIcon /></button>
                 </Grid>
 
             </Grid>

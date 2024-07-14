@@ -7,11 +7,10 @@
     align-items: center;
     justify-content: center;
     background-color: #151517;
-    background: url(https://www.rootit.in/_next/static/media/Main%20gif.feee1d78.gif);
+    background-image: url(https://www.rootit.in/_next/static/media/Main%20gif.feee1d78.gif);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: overlay;
 }
 
 .header__container {
@@ -25,6 +24,15 @@
     position: relative;
     z-index: 1;
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px
+    ;
+}
+
+.header__description {
+    width: 40%;
 }
 
 .header__loader {
@@ -51,5 +59,8 @@
         left: 50%;
         transform: translateX(-50%);
         margin-top: 30px;
+    }
+    .header__description {
+        width: 80%;
     }
 }

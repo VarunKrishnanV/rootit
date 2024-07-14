@@ -1,4 +1,4 @@
-import "../css/imageBanner.css"
+import "../css/components/imageBanner.css"
 
 function ImageBanner({ url }) {
     return (

@@ -2,7 +2,7 @@ import "./../index.css"
 import Container from '@mui/material/Container';
 import Grid from "@mui/material/Unstable_Grid2";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import "../css/subcribe.css"
+import "../css/components/subcribe.css"
 // Grid version 2
 function Subscribe() {
     return (

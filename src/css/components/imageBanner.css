@@ -1,5 +1,6 @@
 .image__banner {
-    height: 60vh;
+    height: 70vh;
+    margin-bottom: 80px;
 }
 
 .image__banner img {
