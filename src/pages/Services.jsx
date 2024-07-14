@@ -8,7 +8,7 @@ function Services() {
           titlePart1="Services"
           titlePart2=""
           description=""
-          type="2"
+          type="1"
         />
       </div>
     </div>

@@ -8,7 +8,7 @@ function Home() {
                     titlePart1="Home"
                     titlePart2=""
                     description=""
-                    type="2"
+                    type="1"
                 />
             </div>
         </div>
