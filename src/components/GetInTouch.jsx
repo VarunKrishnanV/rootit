@@ -11,7 +11,7 @@ function GetInTouch() {
             <Grid container spacing={2} className=" git__container">
                 <Grid xs={12} md={8} lg={8}>
                     <h3 className="text-xl">Let&apos;s Discuss</h3>
-                    <p className="principle__description text-md">We&apos;d love to hear from you !</p>
+                    <p className="principle__description text-md">We&apos;d love to hear from you!</p>
                 </Grid>
                 <Grid >
                     <button className="btn btn-primary text-semi">Get in touch <ArrowOutwardIcon /></button>
