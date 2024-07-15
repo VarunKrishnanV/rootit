@@ -1,6 +1,8 @@
 import Container from '@mui/material/Container';
 import "../css/components/header.css"
 
+
+
 function Header({ titlePart1, titlePart2, description, type }) {
     return (
         <div className="header">

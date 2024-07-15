@@ -123,7 +123,6 @@ function About() {
             </Container>
 
             <GetInTouch />
-            <Footer />
         </div>
     );
 }

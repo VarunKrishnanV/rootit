@@ -104,7 +104,7 @@ function Work() {
 
 
       <GetInTouch />
-      <Footer />
+
     </div>
   )
 }
